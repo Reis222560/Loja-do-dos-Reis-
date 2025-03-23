@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja</title>
+  <style>
+    /* Estilos básicos para o site */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .produto {
+      background-color: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+    }
+    form label, form input, form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    form input, form textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo à Minha Loja</h1>
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <section id="produtos">
+      <h2>Produtos</h2>
+      
+      <div class="produto">
+        <h3>Produto 1</h3>
+        <p>Descrição do produto 1.</p>
+        <button>Comprar</button>
+      </div>
+      
+      <div class="produto">
+        <h3>Produto 2</h3>
+        <p>Descrição do produto 2.</p>
+        <button>Comprar</button>
+      </div>
+      
+      <!-- Adicione mais produtos conforme necessário -->
+    </section>
+    
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email">
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+        
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
